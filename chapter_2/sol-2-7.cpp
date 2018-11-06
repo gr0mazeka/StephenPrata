@@ -21,8 +21,8 @@ int main()
     int min;
     std::cin >> min;
     convert(hour, min);
-	std::cin.get();
-	std::cin.get();
-	return 0;
+    std::cin.get();
+    std::cin.get();
+    return 0;
 }
 
