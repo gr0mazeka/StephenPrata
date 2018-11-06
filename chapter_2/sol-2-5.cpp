@@ -21,5 +21,5 @@ int main()
               << " degrees Fahrenheit." << std::endl; 
     std::cin.get();
     std::cin.get();
-	return 0;
+    return 0;
 }
