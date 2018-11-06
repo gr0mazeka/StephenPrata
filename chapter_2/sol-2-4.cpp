@@ -1,4 +1,5 @@
-//  ---------- Programming Exercises 2.4 ----------
+//  ---------- S.Prata C++ Primer Plus 6th ed. ----------
+//  ------------- Programming Exercises 2.4 -------------
 /*
     Write a program that asks the user to enter his or her age. The program then
     should display the age in months:

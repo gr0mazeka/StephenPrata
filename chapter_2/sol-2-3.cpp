@@ -1,4 +1,5 @@
-//  ---------- Programming Exercises 2.3 ----------
+//  ---------- S.Prata C++ Primer Plus 6th ed. ----------
+//  ------------- Programming Exercises 2.3 -------------
 /*
     Write a C++ program that uses three user-defined functions (counting main()
     as one) and produces the following output:
