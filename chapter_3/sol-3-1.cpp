@@ -17,7 +17,7 @@ int main()
     convert(inch);
     std::cin.get();
     std::cin.get();
-    return 0;    
+    return 0;
 }
 void convert(int i)
 {

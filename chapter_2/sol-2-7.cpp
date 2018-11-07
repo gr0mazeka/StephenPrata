@@ -1,7 +1,7 @@
 //  ---------- S.Prata C++ Primer Plus 6th ed. ----------
 //  ------------- Programming Exercises 2.7 -------------
 /*
-    Write a program that asks the user to enter an hour value and a minute 
+    Write a program that asks the user to enter an hour value and a minute
     value.The main() function should then pass these two values to a type void
     function that displays the two values in the format shown in the following
     sample run:
