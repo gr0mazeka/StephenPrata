@@ -30,5 +30,7 @@ int main()
     double convert = deg+(min+(double)sec/M_S)/D_M;
     std::cout << deg << " degrees, " << min << " minutes, " << sec
               << " seconds = " << convert << " degrees" << std::endl;
+    std::cin.get();
+    std::cin.get();
     return 0;
 }
