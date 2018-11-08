@@ -14,7 +14,5 @@ int main()
     int age;
     std::cin >> age;
     std::cout << "Your age in months is " << converts(age) << std::endl;
-    std::cin.get();
-    std::cin.get();
     return 0;
 }

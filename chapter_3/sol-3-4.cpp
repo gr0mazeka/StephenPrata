@@ -13,19 +13,20 @@
 #include <iostream>
 int main()
 {
-    const int HOUR_PER_DAY = 24;
-    const int MIN_PER_HOUR = 60;
-    const int SEC_PER_MIN = 60;
+    const int HOUR_DAY = 24;
+    const int MIN_HOUR = 60;
+    const int SEC_MIN  = 60;
     std::cout << "Enter the number of seconds: ";
-    long sec;
+    long sec, temp;
     std::cin >> sec;
-    int second = sec % SEC_PER_MIN;
-    sec /= SEC_PER_MIN;
-    int minutes = sec % MIN_PER_HOUR;
-    sec /= MIN_PER_HOUR;
-    int hour = sec % HOUR_PER_DAY;
-    int day = sec / HOUR_PER_DAY;
-    std::cout << sec << " seconds = " << day << " days, " << hour << " hours, "
+    temp = sec;
+    int second = temp%SEC_MIN;
+    temp /= SEC_MIN;
+    int minutes = temp%MIN_HOUR;
+    temp /= MIN_HOUR;
+    int hour = temp%HOUR_DAY;
+    int day =temp/HOUR_DAY;
+    std::cout << sec << " seconds = "<< day << " days, " << hour << " hours, "
               << minutes << " minutes, " << second << " seconds" << std::endl;
     return 0;
 }

@@ -15,22 +15,18 @@
 #include <iostream>
 int main()
 {
-    const int D_M = 60;     // 1 deg = 60 min
-    const int M_S = 60;     // 1 min = 60 sec
+    const int MIN_DEG = 60;     // 1 deg = 60 min
+    const int SEC_MIN = 60;     // 1 min = 60 sec
     std::cout << "Enter a latitude in degrees, minutes, and seconds:\n"
                  "First, enter the degrees: ";
-    int deg;
+    int deg, min, sec;
     std::cin >> deg;
     std::cout << "Next, enter the minutes of arc: ";
-    int min;
     std::cin >> min;
     std::cout << "Finally, enter the seconds of arc: ";
-    int sec;
     std::cin >> sec;
-    double convert = deg+(min+(double)sec/M_S)/D_M;
+    double convert = deg+(min+(double)sec/SEC_MIN)/MIN_DEG;
     std::cout << deg << " degrees, " << min << " minutes, " << sec
               << " seconds = " << convert << " degrees" << std::endl;
-    std::cin.get();
-    std::cin.get();
     return 0;
 }

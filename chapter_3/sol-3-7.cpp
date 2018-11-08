@@ -12,14 +12,12 @@
 #include <iostream>
 int main()
 {
-    const double GALLON = 3.875;    // 1 gallon = 3.85 liters
-    const double MILES = 62.14;     // 100 km = 62.14 miles
+    const double LITER_GAL = 3.875;     // 1 gallon = 3.85 liters
+    const double MIL_KM = 62.14;        // 100 km = 62.14 miles
     std::cout << "Enter gasoline consumption (liters/100 kilometers): ";
     double consum;
     std::cin >> consum;
-    int consum_us = MILES/(consum/GALLON);
+    int consum_us = MIL_KM/(consum/LITER_GAL);
     std::cout << "Your consumption = " << consum_us << " miles/gallon\n";
-    std::cin.get();
-    std::cin.get();
     return 0;
 }

@@ -15,14 +15,11 @@ void convert(int h, int m)
 int main()
 {
     std::cout << "Enter the number of hours: ";
-    int hour;
+    int hour, min;
     std::cin >> hour;
     std::cout << "Enter the number of minutes: ";
-    int min;
     std::cin >> min;
     convert(hour, min);
-    std::cin.get();
-    std::cin.get();
     return 0;
 }
 

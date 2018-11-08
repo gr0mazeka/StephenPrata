@@ -12,7 +12,7 @@
     light travels in a year (about 10 trillion kilometers or 6 trillion miles).
     (The nearest star after the sun is about 4.2 light years away.) Use type
     double (as in Listing 2.4) and this conversion factor:
-        1 light year = 63,240 astronomical units
+        1 light year = 63240 astronomical units
 */
 #include <iostream>
 double convert(double y){ return y*63240; }
@@ -23,8 +23,6 @@ int main()
     std::cin >> year;
     std::cout << year << " light years = " << convert(year)
               << " astronomical units." << std::endl;
-    std::cin.get();
-    std::cin.get();
     return 0;
 }
 

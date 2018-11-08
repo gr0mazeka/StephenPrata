@@ -19,6 +19,5 @@ int main()
     func_1();
     func_2();
     func_2();
-    std::cin.get();
     return 0;
 }

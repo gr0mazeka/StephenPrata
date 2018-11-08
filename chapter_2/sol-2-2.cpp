@@ -12,6 +12,5 @@ int main()
     int fur;
     std::cin >> fur;
     std::cout << fur << " furlongs = "<< converts(fur) << " yards" << std::endl;
-    std::cin.get();
     return 0;
 }

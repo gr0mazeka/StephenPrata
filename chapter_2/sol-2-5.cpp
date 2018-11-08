@@ -19,7 +19,5 @@ int main()
     std::cin >> cels;
     std::cout << cels << " degrers Celsium is " << converts(cels)
               << " degrees Fahrenheit." << std::endl;
-    std::cin.get();
-    std::cin.get();
     return 0;
 }
