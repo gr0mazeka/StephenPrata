@@ -21,14 +21,14 @@ struct pizza
 int main()
 {
     using namespace std;
-    pizza willi;
+    pizza will;
     cout << "Enter name of the pizza company: ";
-    cin.getline(willi.company, 20);
+    cin.getline(will.company, 20);
     cout << "Enter diameter: ";
-    cin >> willi.diameter;
+    cin >> will.diameter;
     cout << "Enter weight: ";
-    cin >> willi.weight;
-    cout << "\nPizza\n Company: " << willi.company << "\n Diameter: "
-         << willi.diameter << "\n Weight: " << willi.weight << endl;
+    cin >> will.weight;
+    cout << "\nPizza\n Company: " << will.company << "\n Diameter: "
+         << will.diameter << "\n Weight: " << will.weight << endl;
     return 0;
 }
