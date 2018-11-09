@@ -1,5 +1,5 @@
-//  ---------- S.Prata C++ Primer Plus 6th ed. ----------
-//  ------------- Programming Exercises 3.7 -------------
+//  --------------------- S.Prata C++ Primer Plus 6th ed. ----------------------
+//  ------------------------ Programming Exercises 3.7 -------------------------
 /*
     Write a program that asks you to enter an automobile gasoline consumption
     figure in the European style (liters per 100 kilometers) and converts to the

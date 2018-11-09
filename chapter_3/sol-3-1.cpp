@@ -1,5 +1,5 @@
-//  ---------- S.Prata C++ Primer Plus 6th ed. ----------
-//  ------------- Programming Exercises 3.1 -------------
+//  --------------------- S.Prata C++ Primer Plus 6th ed. ----------------------
+//  ------------------------ Programming Exercises 3.1 -------------------------
 /*
     Write a short program that asks for your height in integer inches and then
     converts your height to feet and inches. Have the program use the underscore

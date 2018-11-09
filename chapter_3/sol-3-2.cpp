@@ -1,5 +1,5 @@
-//  ---------- S.Prata C++ Primer Plus 6th ed. ----------
-//  ------------- Programming Exercises 3.2 -------------
+//  --------------------- S.Prata C++ Primer Plus 6th ed. ----------------------
+//  ------------------------ Programming Exercises 3.2 -------------------------
 /*
     Write a short program that asks for your height in feet and inches and your
     weight in pounds. (Use three variables to store the information.) Have the

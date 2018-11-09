@@ -1,5 +1,5 @@
-//  ---------- S.Prata C++ Primer Plus 6th ed. ----------
-//  ------------- Programming Exercises 3.6 -------------
+//  --------------------- S.Prata C++ Primer Plus 6th ed. ----------------------
+//  ------------------------ Programming Exercises 3.6 -------------------------
 /*
     Write a program that asks how many miles you have driven and how many
     gallons of gasoline you have used and then reports the miles per gallon your
