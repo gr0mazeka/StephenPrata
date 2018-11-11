@@ -1,8 +1,6 @@
 //  --------------------- S.Prata C++ Primer Plus 6th ed. ----------------------
 //  ------------------------ Programming Exercises 4.2 -------------------------
-/*
-    Rewrite Listing 4.4, using the C++ string class instead of char arrays.
-*/
+
 #include <iostream>
 #include <string>
 int main()

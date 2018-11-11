@@ -1,10 +1,6 @@
 //  --------------------- S.Prata C++ Primer Plus 6th ed. ----------------------
 //  ------------------------ Programming Exercises 4.8 -------------------------
-/*
-    Do Programming Exercise 7 but use new to allocate a structure instead of
-    declaring a structure variable.Also have the program request the pizza
-    diameter before it requests the pizza company name.
-*/
+
 #include <iostream>
 struct pizza
 {

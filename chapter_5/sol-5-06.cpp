@@ -1,10 +1,6 @@
 //  --------------------- S.Prata C++ Primer Plus 6th ed. ----------------------
 //  ------------------------ Programming Exercises 5.5 -------------------------
-/*
-    Do Programming Exercise 5 but use a two-dimensional array to store input for
-    3 ears of monthly sales. Report the total sales for each individual year and
-    for the combined years.
-*/
+
 #include <iostream>
 #include <string>
 int main()

@@ -1,9 +1,6 @@
 //  --------------------- S.Prata C++ Primer Plus 6th ed. ----------------------
 //  ------------------------ Programming Exercises 5.2 -------------------------
-/*
-    Redo Listing 5.4 using a type array object instead of a built-in array and
-    type long double instead of long long. Find the value of 100!
-*/
+
 #include <iostream>
 #include <array>
 const int ArSize =100;

@@ -1,9 +1,6 @@
 //  --------------------- S.Prata C++ Primer Plus 6th ed. ----------------------
 //  ------------------------ Programming Exercises 4.9 -------------------------
-/*
-    Do Programming Exercise 6, but instead of declaring an array of three
-    CandyBar structures, use new to allocate the array dynamically.
-*/
+
 #include <iostream>
 #include <cstring>
 struct CandyBar
