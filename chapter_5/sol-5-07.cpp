@@ -6,7 +6,7 @@
 struct car
 {
     std::string make;
-    int made;
+    int year;
 };
 int main()
 {
@@ -21,11 +21,11 @@ int main()
         cout << "Please enter the make: ";
         getline(cin, collection[i].make);
         cout << "Please enter the year made: ";
-        (cin >> collection[i].made).get();
+        (cin >> collection[i].year).get();
     }
     cout << "Here is your collection:\n";
     for(int i = 0; i < qty; i++)
-        cout << collection[i].made << " " << collection[i].make << endl;
+        cout << collection[i].year << " " << collection[i].make << endl;
     delete [] collection;
     return 0;
 }
