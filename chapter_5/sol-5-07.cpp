@@ -17,7 +17,7 @@ int main()
     car *collection = new car[qty];
     for(int i = 0; i < qty; i++)
     {
-        cout << "Car #" << i+1 << ": \n";
+        cout << "Car #" << i+1 << ":\n";
         cout << "Please enter the make: ";
         getline(cin, collection[i].make);
         cout << "Please enter the year made: ";
