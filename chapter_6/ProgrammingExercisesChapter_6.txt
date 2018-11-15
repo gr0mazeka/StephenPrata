@@ -83,8 +83,8 @@
     Tvarps after 35,000: 20% tax
 
     For example, someone earning 38,000 tvarps would owe 5,000 × 0.00 + 10,000 ×
-    0.10 + 20,000 × 0.15 + 3,000 × 0.20, or 4,600 tvarps.Write a program that
-    uses a loop to solicit incomes and to report tax owed.The loop should
+    0.10 + 20,000 × 0.15 + 3,000 × 0.20, or 4,600 tvarps. Write a program that
+    uses a loop to solicit incomes and to report tax owed. The loop should
     terminate when the user enters a negative number or non-numeric input.
 
 6.  Put together a program that keeps track of monetary contributions to the

@@ -6,8 +6,8 @@ int main()
 {
     using namespace std;
     cout << "Please enter one of the following choices:\n"
-            " c) carnivore p) pianist\n"
-            " t) tree g) game\n";
+            " c) carnivore\t p) pianist\n"
+            " t) tree\t g) game\n";
     char ch;
     cin >> ch;
     while(ch !='c' && ch !='p' && ch !='t' && ch !='g')

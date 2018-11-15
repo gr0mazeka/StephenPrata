@@ -17,8 +17,8 @@ int main()
         {"Wimp Macho", "Junior Programmer", "MIPS", 0},
         {"Raki Rhodes", "Analyst Trainee", "LOOP", 1},
         {"Celia Laiter", "Broker", "STAR", 2},
-        {"Hoppy Hipman", "Engineer", "MAGIC", 1 },
-        {"Pat Hand", "Electrician", "SUN", 2 }
+        {"Hoppy Hipman", "Engineer", "MAGIC", 1},
+        {"Pat Hand", "Electrician", "SUN", 2}
     };
     cout << "Benevolent Order of Programmers Report\n"
             " a. display by name\t b. display by title\n"
