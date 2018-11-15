@@ -33,13 +33,15 @@ int main()
     if(cnt == 0)
         cout << " none\n";
     cout << "Patron:\n";
-    for(int i = 0; i < mem; i++)
-    {
-        if(patron[i].donat < 10000)
-            cout << patron[i].name << "\t" << patron[i].donat << endl;
-    }
     if(cnt == mem)
         cout << " none\n";
+    else {
+        for(int i = 0; i < mem; i++)
+        {
+            if(patron[i].donat < 10000)
+                cout << patron[i].name << "\t" << patron[i].donat << endl;
+        }
+    }
     delete [] patron;
     return 0;
 }
