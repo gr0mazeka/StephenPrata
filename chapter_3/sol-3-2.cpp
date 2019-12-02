@@ -1,16 +1,6 @@
 //  --------------------- S.Prata C++ Primer Plus 6th ed. ----------------------
 //  ------------------------ Programming Exercises 3.2 -------------------------
-/*
-    Write a short program that asks for your height in feet and inches and your
-    weight in pounds. (Use three variables to store the information.) Have the
-    program report your body mass index (BMI). To calculate the BMI, first
-    convert your height in feet and inches to your height in inches
-    (1 foot = 12 inches). Then convert your height in inches to your height in
-    meters by multiplying by 0.0254.Then convert your weight in pounds into your
-    mass in kilograms by dividing by 2.2. Finally, compute your BMI by dividing
-    your mass in kilograms by the square of your height in meters. Use symbolic
-    constants to represent the various conversion factors.
-*/
+
 #include <iostream>
 const int INCH_FT = 12;             // 1 ft = 12 inches
 const double POUND_KG = 2.2;        // 1 kg = 2.2 pounds
