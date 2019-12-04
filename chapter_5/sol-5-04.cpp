@@ -5,7 +5,7 @@
 int main()
 {
     double dafna, kleo;
-    dafna = kleo = 100;
+    dafna = kleo = 100.0;
     for(int i = 1; dafna >= kleo; i++)
     {
         dafna += 10;

@@ -17,14 +17,14 @@ int main()
         {"Bambi", 2.5, 390},
         {"Godzilla", 3.4, 400}
     };
-    cout << "First content\n Brand name: " << snack[0].brand
+    cout << "Snack 1\n Brand name: " << snack[0].brand
          << "\n Weight: " << snack[0].weight
-         << "\n Calores: " << snack[0].cal << endl;
-    cout << "Second content\n Brand name: " << snack[1].brand
+         << "\n Calories: " << snack[0].cal << endl;
+    cout << "Snack 2\n Brand name: " << snack[1].brand
          << "\n Weight: " << snack[1].weight
-         << "\n Calores: " << snack[1].cal << endl;
-    cout << "Third content\n Brand name: " << snack[2].brand
+         << "\n Calories: " << snack[1].cal << endl;
+    cout << "Snack 3\n Brand name: " << snack[2].brand
          << "\n Weight: " << snack[2].weight
-         << "\n Calores: " << snack[2].cal << endl;
+         << "\n Calories: " << snack[2].cal << endl;
     return 0;
 }

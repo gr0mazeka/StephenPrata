@@ -2,11 +2,10 @@
 //  ------------------------ Programming Exercises 5.5 -------------------------
 
 #include <iostream>
-#include <string>
 int main()
 {
     const int YEAR = 12;
-    std::string month[YEAR] {
+    const char *month[YEAR] {
         "January", "February", "March", "April", "May", "June", "July",
         "August", "September", "October", "November", "December" };
     int sale[YEAR], sum = 0;

@@ -11,20 +11,20 @@ int main()
     string month[YEAR] =
         {"January", "February", "March", "April", "May", "June", "July",
          "August", "September", "October", "November", "December"};
-    int sale[CNT][YEAR], sum[CNT] = {0}, total = 0, i;
-    for(i = 0; i < CNT; i++)
+    int sale[CNT][YEAR], sum[CNT] = {0}, total = 0;
+    for(int i = 0; i < CNT; i++)
     {
         cout << "Year " << i+1 << endl;
-        for(int m = 0; m < YEAR; m++)
+        for(int j = 0; j < YEAR; j++)
         {
-            cout << "Sales for " << month[m] << ": ";
-            cin >> sale[i][m];
-            sum[i] += sale[i][m];
+            cout << "Sales for " << month[j] << ": ";
+            cin >> sale[i][j];
+            sum[i] += sale[i][j];
         }
         total += sum[i];
     }
-    for(i = 0; i < CNT; i++)
-        cout << i+1 << " year Sum = " << sum[i] << "\n";
+    for(int i = 0; i < CNT; i++)
+        cout << i+1 << " year Sum = " << sum[i] << endl;
     cout << "Total = " << total << endl;
     return 0;
 }

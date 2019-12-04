@@ -7,11 +7,11 @@ int main()
     using namespace std;
     cout << "Enter number (0 for terminate): ";
     int num, sum = 0;
+    cin >> num;
     while(num != 0)
     {
+        cout << "Sum = " << (sum += num) << endl;
         cin >> num;
-        sum += num;
-        cout << "Sum = " << sum << endl;
     }
     return 0;
 }

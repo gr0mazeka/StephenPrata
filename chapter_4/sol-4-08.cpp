@@ -11,7 +11,7 @@ struct pizza
 int main()
 {
     using namespace std;
-    pizza* will = new pizza;
+    pizza *will = new pizza;
     cout << "Enter diameter: ";
     (cin >> will->diameter).get();
     cout << "Enter name of the pizza company: ";

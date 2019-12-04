@@ -12,6 +12,6 @@ int main()
 {
     CandyBar snack { "Mocha Munch", 2.3, 350 };
     std::cout << "Struct snack\n Brand name: " << snack.brand << "\n Weight: "
-              << snack.weight << "\n Calores: " << snack.cal << std::endl;
+              << snack.weight << "\n Calories: " << snack.cal << std::endl;
     return 0;
 }
