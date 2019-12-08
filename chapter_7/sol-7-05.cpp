@@ -2,16 +2,16 @@
 //  ------------------------ Programming Exercises 7.5 -------------------------
 
 #include <iostream>
-unsigned long int factor(unsigned int n);
+unsigned long int factor(int n);
 int main()
 {
-    std::cout << "Enter value: ";
-    unsigned int size;
-    while (std::cin >> size)
-        std::cout << size << "! " << factor(size) << "\nNext value: ";
+    std::cout << "Enter non-negative value (q to quit): ";
+    int val;
+    while (std::cin >> val && val >= 0)
+        std::cout << val << "! " << factor(val) << "\nNext value: ";
     return 0;
 }
-unsigned long int factor(unsigned int n)
+unsigned long int factor(int n)
 {
     if (n == 0)
         return 1;

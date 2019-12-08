@@ -7,7 +7,7 @@ int main()
 {
     std::cout << "Enter pairs of numbers: (0 for terminate):\n";
     double x, y;
-    while (std::cin >> x >> y && x != 0 && y != 0)
+    while (std::cin >> x && x != 0 && std::cin >> y && y != 0)
         std::cout << "Harmonic (" << x << ", " << y << ") = " << harmonic(x, y)
                   << "\nEnter pair of numbers:\n";
     return 0;

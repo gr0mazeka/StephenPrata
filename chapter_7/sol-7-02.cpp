@@ -17,7 +17,7 @@ int main()
 int fill_ar(int ar[], int limit)
 {
     int i, temp;
-    std::cout << "Enter up to 10 golf scores: \n";
+    std::cout << "Enter up to 10 golf scores (negative value to loop quit):\n";
     for(i = 0; i < limit; i++)
     {
         std::cout << "Value #" << (i + 1) << ": ";
@@ -40,7 +40,7 @@ void avrage(int ar[], int n)
     double temp = 0.0;
     for(int i = 0; i < n; i++)
         temp += ar[i];
-    std::cout << "Avrage score: " << temp/n << std::endl;
+    if(n) std::cout << "Avrage score: " << temp/n << std::endl;
 }
 void show_ar(const int ar[], int n)
 {

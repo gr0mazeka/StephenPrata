@@ -11,7 +11,7 @@ struct box
     float volume;
 };
 void show_box(const box t);
-void volume_box(box * t);
+void volume_box(box *t);
 int main()
 {
     box cube = {"Cube", 5, 4, 10, 0};
