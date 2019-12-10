@@ -2,22 +2,30 @@
 //  ------------------------ Programming Exercises 8.6 -------------------------
 
 #include <iostream>
-const int SIZE = 5;
-template <typename T>
-T max5(T*);
+#include <cstring>
+template <typename T> T maxn(T ar[], int);
+template <> const char* maxn(const char* ar[], int);
 int main(void)
 {
-    int ar1[SIZE] = {1, 7, 5, 11, 9};
-    double ar2[SIZE] = {1.3, 7.5, 9.5, 5.1, 9.3};
-    std::cout << "ar1: " << max5(ar1) << "\nar2: " << max5(ar2) << std::endl;
+    int ar1[6] = {1, 7, 5, 11, 9, 3};
+    double ar2[4] = {1.3, 7.5, 9.5, 5.1};
+    const char* ar3[5] = {"Fiat", "Honda", "Ferrari", "Volvo", "Bugatti"};
+    std::cout << "ar1: "   << maxn(ar1, 6)
+              << "\nar2: " << maxn(ar2, 4)
+              << "\nar3: " << maxn(ar3, 5) << std::endl;
     return 0;
 }
-template <typename T>
-T max5(T *ar)
+template <typename T> T maxn(T ar[], int n)
 {
     T max = ar[0];
-    for(int i = 0; i < SIZE; i++)
+    for(int i = 0; i < n; i++)
         if(max < ar[i]) max = ar[i];
     return max;
 }
-
+template <> const char* maxn(const char* ar[], int n)
+{
+    const char* str = ar[0];
+    for(int i = 0; i < n; i++)
+        if(strlen(str) < strlen(ar[i])) str = ar[i];
+    return str;
+}
