@@ -34,7 +34,7 @@ template <typename T> T SumArray(T arr[], int n)
 }
 template <typename T> T SumArray(T *arr[], int n)
 {
-    T sum = 0.0;
+    T sum = 0;
     for(int i = 0; i < n; i++)
         sum += *arr[i];
     return sum;
