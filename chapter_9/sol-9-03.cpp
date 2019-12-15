@@ -15,14 +15,14 @@ int main(void)
     //Option 1
     chaff *ps1 = new (baffer) chaff[2];
     strcpy(ps1[0].dross, "option_1");
-    strcpy(ps1[1].dross, "OPTION_1");
     ps1[0].slag = 1;
+    strcpy(ps1[1].dross, "OPTION_1");
     ps1[1].slag = 2;
     //Option 2
     chaff *ps2 = new chaff[2];
     strcpy(ps2[0].dross, "option_2");
-    strcpy(ps2[1].dross, "OPTION_2");
     ps2[0].slag = 100;
+    strcpy(ps2[1].dross, "OPTION_2");
     ps2[1].slag = 200;
     //Resume
     for(int i = 0; i < 2; i++)
