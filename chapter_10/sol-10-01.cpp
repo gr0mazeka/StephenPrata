@@ -1,3 +1,6 @@
+//  --------------------- S.Prata C++ Primer Plus 6th ed. ----------------------
+//  ------------------------ Programming Exercises 10.1 ------------------------
+
 #include "bank_account.h"
 
 int main(void)
