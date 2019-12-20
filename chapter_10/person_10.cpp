@@ -1,6 +1,6 @@
-//  persone.cpp --for sol-10-02.cpp
+//  persone_10.cpp --for sol-10-02.cpp
 
-#include "person.h"
+#include "person_10.h"
 #include <iostream>
 #include <cstring>
 

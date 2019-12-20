@@ -1,7 +1,7 @@
 //  --------------------- S.Prata C++ Primer Plus 6th ed. ----------------------
 //  ------------------------ Programming Exercises 10.2 ------------------------
 
-#include "person.h"
+#include "person_10.h"
 #include <iostream>
 
 int main(void)

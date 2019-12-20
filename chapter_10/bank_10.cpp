@@ -1,6 +1,6 @@
-//  bank_account.cpp --for sol-10-01.cpp
+//  bank_10.cpp --for sol-10-01.cpp
 
-#include "bank_account.h"
+#include "bank_10.h"
 #include <iostream>
 
 BankAccount::BankAccount(const std::string &client, const std::string &num, double bal)

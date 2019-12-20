@@ -1,7 +1,7 @@
-//  bank_account.h --for sol-10-01.cpp
+//  bank_10.h --for sol-10-01.cpp
 
-#ifndef BANK_ACCOUNT_H_
-#define BANK_ACCOUNT_H_
+#ifndef BANK_H_
+#define BANK_H_
 
 #include <string>
 
@@ -19,4 +19,4 @@ class BankAccount
         void withdraw(double cash);
 };
 
-#endif  //  BANK_ACCOUNT_H_
+#endif  //  BANK_H_

@@ -1,4 +1,4 @@
-//  person.h --for sol-10-02.cpp
+//  person_10.h --for sol-10-02.cpp
 
 #ifndef PERSON_H_
 #define PERSON_H_
