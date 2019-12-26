@@ -1,18 +1,15 @@
 //  --------------------- S.Prata C++ Primer Plus 6th ed. ----------------------
-//  ----------------------- Programming Exercises 11.1 -------------------------
+//  ----------------------- Programming Exercises 11.2 -------------------------
 
-#include "vect_11_01.h"
+#include "vect_11_02.h"
 #include <cstdlib>
 #include <ctime>
-#include <fstream>
 #include <iostream>
 
 int main(void)
 {
     using namespace std;
     using VECTOR::Vector;
-    ofstream fout;
-    fout.open("vect_log.txt");
     srand(time(0));
     double direction;
     Vector step;
@@ -26,27 +23,17 @@ int main(void)
         cout << "Enter step length: ";
         if(!(cin >> dstep))
             break;
-        fout << "Target Distance: " << target << ", "
-             << "Step Size: " << dstep << endl;
         while(result.magval() < target)
         {
-            fout << steps << ": " << result << endl;
             direction = rand() % 360;
             step.reset(dstep, direction, Vector::POL);
             result = result + step;
             steps++;
         }
-        fout << "After " << steps << " steps, the subject "
-                "has the following location:\n" << result << endl;
-
         cout << "After " << steps << " steps, the subject "
-                "has the following location:\n" << result << endl;
+                "has the following location:\n";
+        cout << result << endl;
         result.polar_mode();
-
-        fout << " or\n" << result << endl;
-        fout << "Average outward distance per step = "
-             << result.magval()/steps << endl;
-
         cout << " or\n" << result << endl;
         cout << "Average outward distance per step = "
              << result.magval()/steps << endl;
@@ -54,7 +41,6 @@ int main(void)
         result.reset(0.0, 0.0);
         cout << "Enter target distance (q to quit): ";
     }
-    fout.close();
     cout << "Bye!\n";
     cin.clear();
     while(cin.get() != '\n')

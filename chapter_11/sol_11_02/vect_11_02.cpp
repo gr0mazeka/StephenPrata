@@ -1,7 +1,8 @@
-// vect_11.cpp --for sol-11-01.cpp
+// vect_11_02.cpp --for sol-11-02.cpp
 
 #include <cmath>
-#include "vect_11.h"
+#include "vect_11_02.h"
+
 using std::sqrt;
 using std::sin;
 using std::cos;
@@ -10,30 +11,10 @@ using std::atan2;
 using std::cout;
 namespace VECTOR
 {
-
     const double Rad_to_deg = 45.0/atan(1.0);
-    void Vector::set_mag()
-    {
-        mag = sqrt(x*x+y*y);
-    }
-    void Vector::set_ang()
-    {
-        if(x == 0.0 && y == 0.0)
-            ang = 0.0;
-        else
-            ang = atan2(y, x);
-    }
-    void Vector::set_x()
-    {
-        x = mag*cos(ang);
-    }
-    void Vector::set_y()
-    {
-        y = mag * sin(ang);
-    }
     Vector::Vector()
     {
-        x = y = mag = ang = 0.0;
+        x = y = 0.0;
         mode = RECT;
     }
     Vector::Vector(double n1, double n2, Mode form)
@@ -43,21 +24,17 @@ namespace VECTOR
         {
             x = n1;
             y = n2;
-            set_mag();
-            set_ang();
         }
         else if(form == POL)
         {
-            mag = n1;
-            ang = n2/Rad_to_deg;
-            set_x();
-            set_y();
+            x = n1 * cos(n2/Rad_to_deg);
+            y = n1 * sin(n2/Rad_to_deg);
         }
         else
         {
             cout << "Incorrect 3rd argument to Vector() -- ";
             cout << "vector set to 0\n";
-            x = y = mag = ang = 0.0;
+            x = y = 0.0;
             mode = RECT;
         }
     }
@@ -68,21 +45,17 @@ namespace VECTOR
         {
             x = n1;
             y = n2;
-            set_mag();
-            set_ang();
         }
         else if(form == POL)
         {
-            mag = n1;
-            ang = n2/Rad_to_deg;
-            set_x();
-            set_y();
+            x = n1 * cos(n2/Rad_to_deg);
+            y = n1 * sin(n2/Rad_to_deg);
         }
         else
         {
             cout << "Incorrect 3rd argument to Vector() -- ";
             cout << "vector set to 0\n";
-             x = y = mag = ang = 0.0;
+             x = y = 0.0;
              mode = RECT;
         }
     }
@@ -122,9 +95,17 @@ namespace VECTOR
         if(v.mode == Vector::RECT)
             os << "(x, y) = (" << v.x << ", " << v.y << ")";
         else if(v.mode == Vector::POL)
-            os << "(m, a) = (" << v.mag << ", " << v.ang * Rad_to_deg << ")";
+            os <<"(m, a) = (" << v.magval()<<", "<< v.angval()*Rad_to_deg <<")";
         else
             os << "Vector object mode is invalid";
         return os;
+    }
+    double Vector::magval() const
+    {
+        return sqrt(x*x+y*y);
+    }
+    double Vector::angval() const
+    {
+        return (x == 0.0 && y == 0.0) ? 0.0 : atan2(y, x);
     }
 } // namespace VECTOR
