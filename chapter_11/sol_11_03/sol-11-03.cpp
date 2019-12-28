@@ -11,14 +11,11 @@ int main(void)
     using namespace std;
     using VECTOR::Vector;
     srand(time(0));
-    double direction;
+    double direction, target, dstep;
     Vector step;
     Vector result(0.0, 0.0);
     unsigned long steps = 0;
-    unsigned long total;
-    unsigned long min, max;
-    double target;
-    double dstep;
+    unsigned long min, max, total;
     int trials;
     cout << "Enter target distance (q to quit): ";
     while(cin >> target)
