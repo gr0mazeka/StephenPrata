@@ -1,45 +1,28 @@
 # C++ Primer Plus
 
-*Sixth Edition*
+*Sixth Edition*  
 **Stephen Prata**
-
+--------------------------------------------------------------------------------
 
 This is my solutions of the exercises in the book C++ Primer Plus.
 
 | Chapter | Solution |
 |---------|----------|
-| Getting Started | No Programming Exercises |
-
-### [Chapter 2 Setting Out to C++] (https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_02)
-
-### [Chapter 3 Dealing with Data] (https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_02)
-
-### [Chapter 4 Compound Types] (https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_02)
-
-### [Chapter 5 Loops and Relational Expressions] (https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_02)
-
-### [Chapter 6 Branching Statements and Logical Operators] (https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_02)
-
-### [Chapter 7 Functions: C++'S Programming Modules] (https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_02)
-
-### [Chapter 8 Adventures in Functions] (https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_02)
-
-### [Chapter 9 Memory Models and Namespaces] (https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_02)
-
-### [Chapter 10 Objects and Classes] (https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_02)
-
-### [Chapter 11 Working with Classes] (https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_02)
-
-### [Chapter 12 CLASSES AND DYNAMIC MEMORY ALLOCATION] (https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_02)
-
-### [Chapter 13 CLASS INHERITANCE] (https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_02)
-
-### [Chapter 14 REUSING CODE IN C++] (https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_02)
-
-### [Chapter 15 FRIENDS, EXCEPTIONS, AND MORE] (https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_02)
-
-### [Chapter 16 THE string CLASS AND THE STANDARD TEMPLATE LIBRARY] (https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_02)
-
-### [Chapter 17 INPUT, OUTPUT, AND FILES] (https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_02)
-
-### [Chapter 18 Visiting with the New C++ Standard] (https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_02)
+|1. Getting Started | No Programming Exercises |
+|2. Setting Out to C++|[exercises/chapter-02](https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_02)|
+|3. Dealing with Data|[exercises/chapter-03](https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_03)|
+|4. Compound Types|[exercises/chapter-04](https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_04)|
+|5. Loops and Relational Expressions|[exercises/chapter-05](https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_05)|
+|6. Branching Statements and Logical Operators|[exercises/chapter-06](https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_06)|
+|7. Functions: C++'S Programming Modules|[exercises/chapter-07](https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_07)|
+|8. Adventures in Functions|[exercises/chapter-08](https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_08)|
+|9. Memory Models and Namespaces|[exercises/chapter-09](https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_09)|
+|10. Objects and Classes|[exercises/chapter-10](https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_10)|
+|11. Working with Classes|[exercises/chapter-11](https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_11)|
+|12. Classes and Dynamic Memory Allocation|[exercises/chapter-12](https://github.com/gr0mazeka/StephenPrata)|
+|13. Class Inheritance|[exercises/chapter-13](https://github.com/gr0mazeka/StephenPrata)|
+|14. Reusing Code in C++|[exercises/chapter-14](https://github.com/gr0mazeka/StephenPrata)|
+|15. Friends, Exceptions, and More|[exercises/chapter-15](https://github.com/gr0mazeka/StephenPrata)|
+|16. The string Class and the Standard Template Library|[exercises/chapter-16](https://github.com/gr0mazeka/StephenPrata)|
+|17. Input, Output, and Files|[exercises/chapter-17](https://github.com/gr0mazeka/StephenPrata)|
+|18. Visiting with the New C++ Standard|[exercises/chapter-18](https://github.com/gr0mazeka/StephenPrata)|
