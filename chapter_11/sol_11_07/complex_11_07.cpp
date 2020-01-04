@@ -24,7 +24,7 @@ Complex Complex::operator*(const Complex & c) const
 {
     return Complex((cA*c.cA-cB*c.cB), (cA*c.cB+cB*c.cA));
 }
-Complex Complex::operator~()
+Complex Complex::operator~() const
 {
     return Complex(cA, -cB);
 }
@@ -38,7 +38,7 @@ Complex operator*(double n, const Complex & c)
 }
 std::ostream & operator<<(std::ostream & os, const Complex & c)
 {
-    os << "(" << c.cA << ", " << c.cB << "i)\n";
+    os << "(" << c.cA << ", " << c.cB << "i)";
     return os;
 }
 std::istream & operator>>(std::istream & is, Complex & c)

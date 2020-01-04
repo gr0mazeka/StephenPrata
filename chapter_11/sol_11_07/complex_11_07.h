@@ -15,7 +15,7 @@ class Complex
         ~Complex(){}
         Complex operator+(const Complex & c) const;
         Complex operator-(const Complex & c) const;
-        Complex operator~();
+        Complex operator~() const;
         Complex operator*(double n) const;
         Complex operator*(const Complex & c) const;
         friend Complex operator*(double n, const Complex & c);
