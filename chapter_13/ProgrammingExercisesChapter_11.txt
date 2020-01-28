@@ -1,0 +1,135 @@
+                         S.Prata C++ Primer Plus 6th ed.
+================================================================================
+                         PROGRAMMING EXERCISES CHAPTER 13
+
+
+1.  Start with the following class declaration:
+
+    // base class
+    class Cd { // represents a CD disk
+    private:
+        char performers[50];
+        char label[20];
+        int selections; // number of selections
+        double playtime; // playing time in minutes
+    public:
+        Cd(char * s1, char * s2, int n, double x);
+        Cd(const Cd & d);
+        Cd();
+        ~Cd();
+        void Report() const; // reports all CD data
+        Cd & operator=(const Cd & d);
+    };
+
+    Derive a Classic class that adds an array of char members that will hold a
+    string identifying the primary work on the CD. If the base class requires
+    that any functions be virtual,modify the base-class declaration to make it
+    so. If a declared method is not needed,remove it from the definition. Test
+    your product with the following program:
+
+    #include <iostream>
+    using namespace std;
+    #include "classic.h" // which will contain #include cd.h
+    void Bravo(const Cd & disk);
+    int main()
+    {
+        Cd c1("Beatles", "Capitol", 14, 35.5);
+        Classic c2 = Classic("Piano Sonata in B flat, Fantasia in C",
+        "Alfred Brendel", "Philips", 2, 57.17);
+        Cd *pcd = &c1;
+        cout << "Using object directly:\n";
+        c1.Report(); // use Cd method
+        c2.Report(); // use Classic method
+        cout << "Using type cd * pointer to objects:\n";
+        pcd->Report(); // use Cd method for cd object
+        pcd = &c2;
+        pcd->Report(); // use Classic method for classic object
+        cout << "Calling a function with a Cd reference argument:\n";
+        Bravo(c1);
+        Bravo(c2);
+        cout << "Testing assignment: ";
+        Classic copy;
+        copy = c2;
+        copy.Report()
+        return 0;
+    }
+    void Bravo(const Cd & disk)
+    {
+        disk.Report();
+    }
+
+2.  Do Programming Exercise 1 but use dynamic memory allocation instead of
+    fixed size arrays for the various strings tracked by the two classes.
+
+3.  Revise the baseDMA - lacksDMA - hasDMA class hierarchy so that all three
+    classes are derived from an ABC. Test the result with a program similar to
+    the one in Listing 13.10. That is, it should feature an array of pointers to
+    the ABC and allow the user to make runtime decisions as to what types of
+    objects are created. Add virtual View() methods to the class definitions to
+    handle displaying the data.
+
+4.  The Benevolent Order of Programmers maintains a collection of bottled port.
+    To describe it,the BOP Portmaster has devised a Port class,as declared here:
+
+    #include <iostream>
+    using namespace std;
+    class Port
+    {
+    private:
+        char * brand;
+        char style[20]; // i.e., tawny, ruby, vintage
+        int bottles;
+    public:
+        Port(const char * br = "none", const char * st = "none", int b = 0);
+        Port(const Port & p); // copy constructor
+        virtual ~Port() { delete [] brand;  }
+        Port & operator=(const Port & p);
+        Port & operator+=(int b); // adds b to bottles
+        Port & operator-=(int b); // subtracts b from bottles, if available
+        int BottleCount() const { return bottles;  }
+        virtual void Show() const;
+        friend ostream & operator<<(ostream & os, const Port & p);
+    };
+
+    The Show() method presents information in the following format:
+
+    Brand: Gallo
+    Kind: tawny
+    Bottles: 20
+
+    The operator<<() function presents information in the following format (with
+    no newline character at the end):
+
+    Gallo, tawny, 20
+
+    The Portmaster completed the method definitions for the Port class and then
+    derived the VintagePort class as follows before being relieved of his
+    position for accidentally routing a bottle of ’45 Cockburn to someone
+    preparing an experimental barbecue sauce:
+
+    class VintagePort : public Port // style necessarily = "vintage"
+    {
+    private:
+        char * nickname; // i.e., "The Noble" or "Old Velvet", etc.
+        int year; // vintage year
+    public:
+        VintagePort();
+        VintagePort(const char * br, int b, const char * nn, int y);
+        VintagePort(const VintagePort & vp);
+        ~VintagePort() { delete [] nickname;  }
+        VintagePort & operator=(const VintagePort & vp);
+        void Show() const;
+        friend ostream & operator<<(ostream & os, const VintagePort & vp);
+    };
+
+    You get the job of completing the VintagePort work.
+
+    a.  Your first task is to re-create the Port method definitions because the
+        former Portmaster immolated his upon being relieved.
+    b.  Your second task is to explain why certain methods are redefined and
+        others are not.
+    c.  Your third task is to explain why operator=() and operator<<() are not
+        virtual.
+    d.  Your fourth task is to provide definitions for the VintagePort methods.
+
+================================================================================
