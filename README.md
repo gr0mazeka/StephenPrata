@@ -21,7 +21,7 @@ This is my solutions of the exercises in the book C++ Primer Plus.
 |10. Objects and Classes|[exercises/chapter_10](https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_10)|
 |11. Working with Classes|[exercises/chapter_11](https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_11)|
 |12. Classes and Dynamic Memory Allocation|[exercises/chapter_12](https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_12)|
-|13. Class Inheritance|[exercises/chapter_13](https://github.com/gr0mazeka/StephenPrata)|
+|13. Class Inheritance|[exercises/chapter_13](https://github.com/gr0mazeka/StephenPrata/tree/master/chapter_13)|
 |14. Reusing Code in C++|[exercises/chapter_14](https://github.com/gr0mazeka/StephenPrata)|
 |15. Friends, Exceptions, and More|[exercises/chapter_15](https://github.com/gr0mazeka/StephenPrata)|
 |16. The string Class and the Standard Template Library|[exercises/chapter_16](https://github.com/gr0mazeka/StephenPrata)|
