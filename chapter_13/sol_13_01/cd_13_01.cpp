@@ -1,6 +1,6 @@
-// cd_13_02.cpp --for sol_13_02.cpp
+// cd_13_01.cpp --for sol_13_01.cpp
 
-#include "cd_13_02.h"
+#include "cd_13_01.h"
 #include <cstring>
 #include <iostream>
 
