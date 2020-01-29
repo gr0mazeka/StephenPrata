@@ -24,10 +24,8 @@ Cd::Cd(const Cd & d)
 }
 Cd::Cd()
 {
-    performers = new char[1];
-    label = new char[1];
-    performers[0] = '\0';
-    label[0] = '\0';
+    performers = NULL;
+    label = NULL;
     selections = 0;
     playtime = 0;
 }
@@ -69,8 +67,7 @@ Classic::Classic(const Classic & d) : Cd(d)
 }
 Classic::Classic() : Cd()
 {
-    pr_work = new char[1];
-    pr_work[0] = '\0';
+    pr_work = NULL;
 }
 Classic::~Classic()
 {
@@ -85,8 +82,8 @@ Classic & Classic::operator=(const Classic & d)
 {
     if(this == &d)
         return *this;
-    Cd::operator=(d);
     delete [] pr_work;
+    Cd::operator=(d);
     pr_work = new char[std::strlen(d.pr_work) + 1];
     std::strcpy(pr_work, d.pr_work);
     return *this;

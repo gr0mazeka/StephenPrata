@@ -2,7 +2,7 @@
 
 #include "stack_12_04.h"
 
-Stack::Stack(int n)//: size(n)
+Stack::Stack(int n)
 {
     if(n < 0 || n > MAX)
         n = 10;
@@ -10,7 +10,7 @@ Stack::Stack(int n)//: size(n)
     size = n;
     top = 0;
 }
-Stack::Stack(const Stack & st)//: size(n)
+Stack::Stack(const Stack & st)
 {
     size = st.size;
     pitems = new Item[size];
